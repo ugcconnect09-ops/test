@@ -1,1 +1,14 @@
-{"items": []}
+{
+  "items": [
+    {
+      "name": "transparent",
+      "image": "/uploads/transparent-background-image-blank-canvas-creativity_191095-80912.avif",
+      "visible": true
+    },
+    {
+      "name": "5 mb gretaer",
+      "image": "/uploads/craiyon_003934_greater_than_5_mb.png",
+      "visible": true
+    }
+  ]
+}
