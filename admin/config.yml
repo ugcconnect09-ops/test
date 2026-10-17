@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/sveltia-test
+  repo: ugcconnect09-ops/test
   branch: main
 
 media_folder: uploads
