@@ -1,1 +1,10 @@
-{"headline":"Test Talent","intro":"Edit me at /admin","stats":[{"label":"Views","value":"500K+"}]}
+{
+  "headline": "Test Talent2222222",
+  "intro": "Edit me at /admin",
+  "stats": [
+    {
+      "label": "Views",
+      "value": "500K+"
+    }
+  ]
+}
