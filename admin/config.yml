@@ -1,0 +1,54 @@
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/sveltia-test
+  branch: main
+
+media_folder: uploads
+public_folder: /uploads
+
+collections:
+  - name: site
+    label: Site content
+    files:
+      - name: home
+        label: Home
+        file: data/home.json
+        format: json
+        fields:
+          - { label: Headline, name: headline, widget: string }
+          - { label: Intro, name: intro, widget: text }
+          - label: Stats
+            name: stats
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+      - name: videos
+        label: Videos
+        file: data/videos.json
+        format: json
+        fields:
+          - label: Videos
+            name: items
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Link
+                name: url
+                widget: string
+                pattern: ['^https://(www\.)?(youtube\.com|youtu\.be|tiktok\.com)/.+', "Paste a full YouTube, Shorts or TikTok link"]
+              - { label: Format, name: format, widget: select, options: ["Widescreen", "Vertical"], default: "Widescreen" }
+      - name: logos
+        label: Brand logos
+        file: data/logos.json
+        format: json
+        fields:
+          - label: Logos
+            name: items
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { label: Brand name, name: name, widget: string }
+              - { label: Logo, name: image, widget: image }
+              - { label: Show on site, name: visible, widget: boolean, default: true }
